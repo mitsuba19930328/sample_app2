@@ -43,7 +43,7 @@ class UsersLoginTest < ActionDispatch::IntegrationTest
   end
 
   test "login without remembering" do
-    # クッキーを保存してログイン
+    # クッキーを保存してログイん
     log_in_as(@user, remember_me: '1')
     delete logout_path
     # クッキーを削除してログイン
